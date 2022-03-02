@@ -10,7 +10,7 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-    <bean id="writer" class="writer.EncriptadoCesar" />
+    <bean id="writer" class="writer.EncriptadoVignere" />
 
     <bean id="MySpringWriterBeanWithDependency" class="testbean.MySpringWriterBeanWithDependency">
         <property name="encripta" ref="writer" />

@@ -22,15 +22,17 @@ public class Main {
         do {
             System.out.println("Digite 1 para ENCRIPTAR o 2 para DESENCRIPTAR, 0 para SALIR: ");
             opcion = Integer.parseInt(in.readLine());
-            System.out.println("Texto: ");
-            texto = in.readLine();
             switch (opcion) {
                 case 0:
                     break;
                 case 1:
+                    System.out.println("Texto: ");
+                    texto = in.readLine();
                     System.out.println("TEXTO ENCRIPTADO -- RESULTADO: " + test.runEncryption(texto.toLowerCase()));
                     break;
                 case 2:
+                    System.out.println("Texto: ");
+                    texto = in.readLine();
                     System.out.println("TEXTO DESENCRIPTADO -- RESULTADO: " + test.runDecryption(texto.toLowerCase()));
                     break;
             }
